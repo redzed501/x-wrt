@@ -68,7 +68,7 @@ tplink,re650-v1)
 	ucidef_set_led_netdev "eth_link" "LAN link" "$boardname:green:eth_link" "lan" "link"
 	;;
 xwrt,t-cpe1200k-v01)
-	ucidef_set_led_netdev "led_eth"  "led_eth"  "xwrt:blue:eth"  "wan"
+	ucidef_set_led_switch "led_eth"  "led_eth"  "xwrt:blue:eth"  "switch0" "0x1"
 	set_wifi_led "xwrt:blue:wifi"
 	ucidef_set_rssimon "wlan0" "200000" "1"
 	ucidef_set_led_rssi "rssilow" "RSSILOW" "xwrt:blue:rssi1" "wlan0" "1" "100"
